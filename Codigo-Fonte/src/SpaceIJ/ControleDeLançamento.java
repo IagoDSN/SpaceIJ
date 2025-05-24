@@ -25,7 +25,7 @@ public class ControleDeLançamento {
         }
     
     public void verificarCondicoes(){
-        if(sistema.missao.engenheiro.getAutorizacao() == true && sistema.missao.foguete.quantidadeCombustivel == sistema.missao.foguete.maximoCombustivel && sistema.missao.foguete.verificado == true && sistema.missao.getDistancia()>0 && sistema.missao.getLocal()!=""){
+        if(sistema.missao.engenheiro.getAutorizacao() == true && sistema.missao.foguete.getComsbustivel() == sistema.missao.foguete.getMaximoCombustivel() && sistema.missao.foguete.isVerificado() == true && sistema.missao.getDistancia()>0 && sistema.missao.getLocal()!=""){
             this.atorizado = true;
             System.out.println("O lançamento do foguete foi autorizado");
         }

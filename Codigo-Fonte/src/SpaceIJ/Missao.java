@@ -46,7 +46,7 @@ public class Missao {
         System.out.println("Local e distancia definidos!");
     }
     public void calcularTempoDeViagem(){
-        tempo = this.distancia / this.foguete.velocidade;
+        tempo = this.distancia / this.foguete.getVelocidade();
         System.out.println("O tempo que a viajem demorará será de "+this.tempo/24+ " Dias");
     }
 }

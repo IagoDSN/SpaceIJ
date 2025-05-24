@@ -10,9 +10,9 @@ package SpaceIJ;
  * @author 13410289682
  */
 public class Foguete {
-    String nome;
-    double quantidadeCombustivel, maximoCombustivel, velocidade;
-    boolean status, statusDeLançamento, verificado; //Status se está pronto ou não, se está lançado ou não
+    private String nome;
+    private double quantidadeCombustivel, maximoCombustivel, velocidade;
+    private boolean status, statusDeLançamento, verificado; //Status se está pronto ou não, se está lançado ou não
     private static int totalFoguetes;
 
     public Foguete(){
@@ -41,6 +41,31 @@ public class Foguete {
         public double getComsbustivel(){
         return(this.quantidadeCombustivel);
     }   
+
+    public double getMaximoCombustivel() {
+        return maximoCombustivel;
+    }
+
+    public void setMaximoCombustivel(double maximoCombustivel) {
+        this.maximoCombustivel = maximoCombustivel;
+    }
+
+    public boolean isVerificado() {
+        return verificado;
+    }
+
+    public void setVerificado(boolean verificado) {
+        this.verificado = verificado;
+    }
+
+    public double getVelocidade() {
+        return velocidade;
+    }
+
+    public void setVelocidade(double velocidade) {
+        this.velocidade = velocidade;
+    }
+        
     
     public void criarFoguete(String nome, double valor, double velo){
         this.maximoCombustivel = valor;
